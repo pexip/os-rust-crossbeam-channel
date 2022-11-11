@@ -1,0 +1,24 @@
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crossbeam-channel 0.5.6 --all-targets --all-features
+Features: test-name=rust-crossbeam-channel:@
+Depends: dh-cargo (>= 18), librust-num-cpus-1+default-dev (>= 1.13.0-~~), librust-rand-0.8+default-dev, librust-signal-hook-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crossbeam-channel 0.5.6 --all-targets --no-default-features --features crossbeam-utils
+Features: test-name=librust-crossbeam-channel-dev:crossbeam-utils
+Depends: dh-cargo (>= 18), librust-num-cpus-1+default-dev (>= 1.13.0-~~), librust-rand-0.8+default-dev, librust-signal-hook-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crossbeam-channel 0.5.6 --all-targets 
+Features: test-name=librust-crossbeam-channel-dev:default
+Depends: dh-cargo (>= 18), librust-num-cpus-1+default-dev (>= 1.13.0-~~), librust-rand-0.8+default-dev, librust-signal-hook-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crossbeam-channel 0.5.6 --all-targets --no-default-features --features std
+Features: test-name=librust-crossbeam-channel-dev:std
+Depends: dh-cargo (>= 18), librust-num-cpus-1+default-dev (>= 1.13.0-~~), librust-rand-0.8+default-dev, librust-signal-hook-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
+
+Test-Command: /usr/share/cargo/bin/cargo-auto-test crossbeam-channel 0.5.6 --all-targets --no-default-features
+Features: test-name=librust-crossbeam-channel-dev:
+Depends: dh-cargo (>= 18), librust-num-cpus-1+default-dev (>= 1.13.0-~~), librust-rand-0.8+default-dev, librust-signal-hook-0.3+default-dev, @
+Restrictions: allow-stderr, skip-not-installable
