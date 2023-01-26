@@ -1,3 +1,9 @@
+rust-crossbeam-channel (0.5.6-1pexip1) pexip; urgency=medium
+
+  * Prepare Pexip packaging
+
+ -- John-Mark Bell <jmb@pexip.com>  Thu, 26 Jan 2023 19:14:25 +0000
+
 rust-crossbeam-channel (0.5.6-1) unstable; urgency=medium
 
   * Team upload.
