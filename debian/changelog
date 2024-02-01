@@ -1,3 +1,9 @@
+rust-crossbeam-channel (0.5.6-1+pexip24u4) pexip-bookworm; urgency=medium
+
+  * New versioning scheme
+
+ -- Mark Hymers <mark.hymers@pexip.com>  Thu, 01 Feb 2024 16:29:55 +0000
+
 rust-crossbeam-channel (0.5.6-1pexip3) pexip-bookworm; urgency=medium
 
   * Bookworm build for product distribution
